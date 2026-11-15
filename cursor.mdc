@@ -1,0 +1,23 @@
+---
+description: Tech stack for this Node.js, TypeScript, and Next.js project
+alwaysApply: true
+---
+
+# Tech stack
+
+This is a Node.js web app built with TypeScript and Next.js.
+
+- Runtime: Node.js
+- Language: TypeScript (strict). Do not add plain JavaScript source files.
+- Framework: Next.js (App Router)
+- UI: React with TypeScript (`.tsx`)
+- Styling: CSS. Prefer colocated styles or a single global stylesheet until a styling library is chosen.
+- Package manager: npm
+
+## Conventions
+
+- Use the App Router under `app/`. Put route handlers in `app/api/`.
+- Type props, function arguments, and API request/response shapes. Avoid `any`.
+- Keep server-only logic in Server Components or Route Handlers. Mark client components with `"use client"` only when they need browser APIs or interactivity.
+- Use `next/link` and `next/navigation` for routing. Use `next/image` for images.
+- Name files in kebab-case. Name React components in PascalCase.
